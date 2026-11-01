@@ -1,0 +1,93 @@
+[
+  {
+    "id": "greeting",
+    "prompt": "Привет",
+    "expected_source": "conversation-mind",
+    "expected_intent": "greeting",
+    "min_chars": 6,
+    "max_chars": 220
+  },
+  {
+    "id": "gratitude",
+    "prompt": "Спасибо, стало понятнее",
+    "expected_source": "conversation-mind",
+    "expected_intent": "gratitude",
+    "min_chars": 6,
+    "max_chars": 220
+  },
+  {
+    "id": "correction",
+    "prompt": "Ты не понял, я имел в виду другое",
+    "expected_source": "conversation-mind",
+    "expected_intent": "correction",
+    "min_chars": 35,
+    "max_chars": 420
+  },
+  {
+    "id": "support",
+    "prompt": "Мне тревожно и тяжело",
+    "expected_source": "conversation-mind",
+    "expected_intent": "support",
+    "min_chars": 70,
+    "max_chars": 650
+  },
+  {
+    "id": "choice",
+    "prompt": "Мне нужно выбрать между двумя вариантами",
+    "expected_source": "conversation-mind",
+    "expected_intent": "choice",
+    "min_chars": 50,
+    "max_chars": 500
+  },
+  {
+    "id": "preference",
+    "prompt": "Мне важно, чтобы ответы были короткими и понятными",
+    "expected_source": "conversation-mind",
+    "expected_intent": "preference",
+    "min_chars": 10,
+    "max_chars": 250
+  },
+  {
+    "id": "continuation_with_context",
+    "prompt": "Давай дальше",
+    "previous_messages": [
+      {
+        "role": "user",
+        "content": "Мне нужно спокойно разобрать один выбор"
+      },
+      {
+        "role": "assistant",
+        "content": "Давай начнём с главного критерия."
+      }
+    ],
+    "expected_source": "conversation-mind",
+    "expected_intent": "continuation",
+    "expected_context_used": true,
+    "min_chars": 10,
+    "max_chars": 250
+  },
+  {
+    "id": "casual_conversation",
+    "prompt": "Как дела?",
+    "expected_source": "conversation-mind",
+    "expected_intent": "conversation",
+    "min_chars": 10,
+    "max_chars": 260
+  },
+  {
+    "id": "fact_keeps_external_route",
+    "prompt": "Что такое фотосинтез?",
+    "expected_source": "internet-search-auto",
+    "expected_intent": "internet_answer",
+    "min_chars": 10,
+    "max_chars": 300
+  },
+  {
+    "id": "weather_keeps_external_route",
+    "prompt": "Какая завтра погода в Старом Осколе?",
+    "expected_source": "internet-search-auto",
+    "expected_intent": "internet_answer",
+    "min_chars": 10,
+    "max_chars": 300
+  }
+]

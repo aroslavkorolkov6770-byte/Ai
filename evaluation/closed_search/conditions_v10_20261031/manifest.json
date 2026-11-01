@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-31T17:39:20.226Z",
+  "root": "C:\\Users\\KROLL\\Desktop\\Ai",
+  "final_run": "results/candidate2",
+  "runtime_count": 79,
+  "changed_core": [
+    {
+      "path": "ai_core/site_search.py",
+      "before": "2a88ac090a707adae8327802e1cfdacf02f731c72bfc4b63b2754130884d3d9f",
+      "after": "c3ec09ff615bb14ad096407f430f8fa9b0d5eb30abbf9bd7f2278d22e0fd8d49"
+    },
+    {
+      "path": "ai_core/site_search_language.py",
+      "before": "9104461eb0a3a3417a0d132f194415e388152c11cd7cad395ec174dedca68c40",
+      "after": "5ae4c42a7940701489a3b06f79434d9dd6555c3fbbda9d9c52e09c2bd49af6ec"
+    },
+    {
+      "path": "ai_core/site_search_ranking.py",
+      "before": "71c408a79240c5c280f274d7bc769ccc19acf230486508b76dd1d0efaace2c39",
+      "after": "ae209a5271bd95aca1b1ab8415b083290856d839be1de52d3c710607f77d36bb"
+    }
+  ],
+  "full_code_files": [
+    {
+      "path": "ai_core/site_search.py",
+      "sha256": "c3ec09ff615bb14ad096407f430f8fa9b0d5eb30abbf9bd7f2278d22e0fd8d49"
+    },
+    {
+      "path": "ai_core/site_search_language.py",
+      "sha256": "5ae4c42a7940701489a3b06f79434d9dd6555c3fbbda9d9c52e09c2bd49af6ec"
+    },
+    {
+      "path": "ai_core/site_search_ranking.py",
+      "sha256": "ae209a5271bd95aca1b1ab8415b083290856d839be1de52d3c710607f77d36bb"
+    },
+    {
+      "path": "tests/test_site_search_rule_selection.py",
+      "sha256": "887fbb41035d355290727a8e5429bf506a7f98b630918fc29d5cdaf080b80150"
+    },
+    {
+      "path": "evaluation/closed_search/conditions_v10_20261031/run.py",
+      "sha256": "a5bbe64d42567d9c4f9449a9a18afe5d2b1549cd8b3e0e3d852d4fd6afe82ca4"
+    },
+    {
+      "path": "evaluation/closed_search/conditions_v10_20261031/diagnose.py",
+      "sha256": "1e7c8fd41678fc8d26208e04490bbbf5aa9b8dfc2f6d23c967572604ab64a38f"
+    },
+    {
+      "path": "evaluation/closed_search/conditions_v10_20261031/postcheck.py",
+      "sha256": "f2e6cb4a077f28d15ba97081ac4c74913236b3c61e07e5aa50a6bb2ad6557534"
+    },
+    {
+      "path": "evaluation/closed_search/conditions_v10_20261031/grade.cjs",
+      "sha256": "dd04874f4bb7df6c96c19357eadbca5c9ae6dcb8a615741180c37ad6e8f8aa45"
+    },
+    {
+      "path": "evaluation/closed_search/conditions_v10_20261031/reviews.json",
+      "sha256": "ddd63a75b18625e15bd8f80f71e229ef22ab175b42458b06cb0e95ac0099d7b7"
+    },
+    {
+      "path": "evaluation/closed_search/conditions_v10_20261031/package_report.cjs",
+      "sha256": "c23166a80acbad3c7de2347d92c3230f520aeb1143dbcf380c78ecd6925bc0c4"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "results/tests-final.txt",
+      "sha256": "37683b1ddea81c7749446e60276ce217a988ddbd0d9a2d6f4f2761c9ca3dcdd5"
+    },
+    {
+      "path": "results/candidate1/answers.jsonl",
+      "sha256": "9294929de9aa320550487eb6e84a549ab3d0963f93a42a36bbf3deb2bf897c2c"
+    },
+    {
+      "path": "results/candidate1/summary.json",
+      "sha256": "847ec0cc84c081708a902a42081e825272bb2f310eb1b20403572c88cf3a7c31"
+    },
+    {
+      "path": "results/candidate2/answers.jsonl",
+      "sha256": "d2a4491c6a619aff847c3752064599403a1f670ba6734e4198559d240256f5ce"
+    },
+    {
+      "path": "results/candidate2/judgments.json",
+      "sha256": "48dbf63606f8ee74884f8e94e5ef873fbf8001d63af9df2412c899a75169ac9b"
+    },
+    {
+      "path": "results/candidate2/summary.json",
+      "sha256": "7e3e654566bee99bb47da0109623e6d8dbaacc0b59df6b35b59eeaaa6ba6bbe4"
+    },
+    {
+      "path": "results/candidate2/postcheck.json",
+      "sha256": "f78cfa7efda115613805079c63745b9b505779c80f1111c52ddd9ffedde7778e"
+    }
+  ]
+}

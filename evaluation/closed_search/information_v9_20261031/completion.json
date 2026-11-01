@@ -1,0 +1,42 @@
+{
+  "at": "2026-10-31T15:39:54.525Z",
+  "frozen_files": 15,
+  "runtime_files": 79,
+  "full_code_files": 9,
+  "questions": 100,
+  "correct": 78,
+  "retained_previous_correct": 75,
+  "tests": 351,
+  "postchecks": 16,
+  "journal_sha256": "283fc358bab7650180296ea48a5cfafe24926d9eeeb706cd91a4f8a1e804519a",
+  "artifacts": [
+    {
+      "path": "SEARCH_INFORMATION_V9_REPORT_2026_10_31.md",
+      "sha256": "4dc050e5fe07085ae33651f66ac39d51153dd49d8340dd28b40afc8a6f0c882e"
+    },
+    {
+      "path": "SEARCH_INFORMATION_V9_FULL_CODE_2026_10_31.md",
+      "sha256": "4c0290c6b23aa18aa25c2aa4644baaa251c6829ac9e3a709da90cbd71c008053"
+    },
+    {
+      "path": "VATES_AI_MASTER_PLAN_2026_10_31.md",
+      "sha256": "3259a83d7845ce3ab1f950243a22b88a81aea0db0e087955ba318fbf24386d0a"
+    },
+    {
+      "path": "PROGRESS_LOG.md",
+      "sha256": "53b640c8f338142bdd206ec039dffb6cbdc306451a7a15cfe688817a09bd8d89"
+    },
+    {
+      "path": "evaluation/closed_search/information_v9_20261031/ALL_100_RESULTS.md",
+      "sha256": "a84c20099c8345327ca7bce32fc617405c68dc2bddfcca88934dc0460f74ea84"
+    },
+    {
+      "path": "evaluation/closed_search/information_v9_20261031/PLAN.md",
+      "sha256": "9fff183c8af92618401598527ae022cdfa553c8202920653bba350ace27a2ed2"
+    },
+    {
+      "path": "evaluation/closed_search/information_v9_20261031/manifest.json",
+      "sha256": "83df267194180e455f63526e11b8d3c8b57dc6433fbd363e7de3ab4d34e47493"
+    }
+  ]
+}

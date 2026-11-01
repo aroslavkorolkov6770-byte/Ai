@@ -1,0 +1,17 @@
+{
+  "name": "vates-ai-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Локальное приложение Ватэс AI с управлением собственным API",
+  "main": "main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.cjs",
+    "build:ui": "node build-ui.cjs",
+    "package": "node package.cjs"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "electron": "44.5.1"
+  }
+}

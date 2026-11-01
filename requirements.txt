@@ -1,0 +1,10 @@
+# Основной стек проекта собственной нейросети.
+torch>=2.2,<3.0
+numpy>=2.0,<3.0
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.0,<3.0
+pypdf==6.21.4
+pdfplumber==0.11.9
+snowballstemmer==3.1.1
+opencv-python-headless==4.13.0.92

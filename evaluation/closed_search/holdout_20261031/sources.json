@@ -1,0 +1,62 @@
+[
+  {
+    "id": "bp30",
+    "title": "БП30Б-Д3-х — краткое руководство",
+    "type": "technical_datasheet",
+    "file": "bp30.pdf",
+    "url": "https://owen.ru/uploads/25/kr_bp30b-d3-x_m01__033_a4.pdf",
+    "downloaded_at": "2026-10-31T08:42:27.741Z",
+    "final_url": "https://owen.ru/uploads/25/kr_bp30b-d3-x_m01__033_a4.pdf",
+    "bytes": 501990,
+    "sha256": "553a7f7ac5ce91c8433d96294c5ff9720c7c40a1884e25ccf8ad26b0780c0fb7",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "tplink",
+    "title": "TL-SG1005D/TL-SG1008D — руководство по установке",
+    "type": "network_installation",
+    "file": "tplink.pdf",
+    "url": "https://static.tp-link.com/resources/document/TL_SG1005D_V6_QIG_RU_7106505336_1.pdf",
+    "downloaded_at": "2026-10-31T08:42:25.524Z",
+    "final_url": "https://static.tp-link.com/resources/document/TL_SG1005D_V6_QIG_RU_7106505336_1.pdf",
+    "bytes": 578227,
+    "sha256": "a0633a247f81e0681fed3b83c9cfdd9bbf3d8914969f3a711d1ed91c111352f7",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "rsl",
+    "title": "Правила пользования Российской государственной библиотекой — редакция 10.04.2023",
+    "type": "institution_rules",
+    "file": "rsl.pdf",
+    "url": "https://www.rsl.ru/uploads/29cc879c-e3ad-46f6-999a-6b06a33061e2.pdf",
+    "downloaded_at": "2026-10-31T08:42:25.391Z",
+    "final_url": "https://www.rsl.ru/uploads/29cc879c-e3ad-46f6-999a-6b06a33061e2.pdf",
+    "bytes": 398791,
+    "sha256": "35967d2245614d5c8acaa8ab562a20fa080c8f8dbdaaa68b6b3a9c32a61c2253",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "beko",
+    "title": "Beko WKM 4215 W — руководство пользователя",
+    "type": "appliance_manual",
+    "file": "beko.pdf",
+    "url": "https://www.beko.com/content/dam/beko-global-multichannel-mc-aem/beko-global-multichannel-mc-aemProductCatalog/product-documents/8912843200-WKM-4215-W/ro-RO-8912843200-MDM2-USER-MANUAL-FILE-ro-RO.pdf",
+    "downloaded_at": "2026-10-31T08:42:25.908Z",
+    "final_url": "https://www.beko.com/content/dam/beko-global-multichannel-mc-aem/beko-global-multichannel-mc-aemProductCatalog/product-documents/8912843200-WKM-4215-W/ro-RO-8912843200-MDM2-USER-MANUAL-FILE-ro-RO.pdf",
+    "bytes": 3711630,
+    "sha256": "bf4dbb21a84854bb79d6e098a9c90f1f46da8d2a91dbdcfea6b65c2abd8fa86b",
+    "content_type": "application/pdf"
+  },
+  {
+    "id": "post",
+    "title": "Почта России — требования к содержимому и упаковке отправлений",
+    "type": "service_rules_html",
+    "file": "post.html",
+    "url": "https://info.pochta.ru/support/post-rules/content-package-rules",
+    "downloaded_at": "2026-10-31T08:42:25.482Z",
+    "final_url": "https://info.pochta.ru/support/post-rules/content-package-rules",
+    "bytes": 296275,
+    "sha256": "c0926b912345712332d4dad85136302c5a5cb846e8ab2dd329e69efdd74c0930",
+    "content_type": "text/html; charset=utf-8"
+  }
+]

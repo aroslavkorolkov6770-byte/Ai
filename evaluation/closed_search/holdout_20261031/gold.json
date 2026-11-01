@@ -1,0 +1,802 @@
+[
+  {
+    "id": "q001",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "2,50 А.",
+    "reference": "1, таблица технических характеристик"
+  },
+  {
+    "id": "q002",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "1,25 А.",
+    "reference": "1, таблица"
+  },
+  {
+    "id": "q003",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Да, у обоих 30 Вт.",
+    "reference": "1, общая ячейка таблицы"
+  },
+  {
+    "id": "q004",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "В пределах ±8%.",
+    "reference": "1, таблица"
+  },
+  {
+    "id": "q005",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "От 85 до 264 В переменного тока.",
+    "reference": "1, диапазон, а не номинал 110/230"
+  },
+  {
+    "id": "q006",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "47–63 Гц.",
+    "reference": "1, таблица"
+  },
+  {
+    "id": "q007",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "110–370 В постоянного тока.",
+    "reference": "1, таблица"
+  },
+  {
+    "id": "q008",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "КПД не менее 85%.",
+    "reference": "1, таблица"
+  },
+  {
+    "id": "q009",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "От −20 до +50 °C.",
+    "reference": "1, условия эксплуатации"
+  },
+  {
+    "id": "q010",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "От −40 до +50 °C.",
+    "reference": "1, условия хранения и транспортирования"
+  },
+  {
+    "id": "q011",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Одинаковой длины и одинакового сечения.",
+    "reference": "1, примечание о параллельном включении"
+  },
+  {
+    "id": "q012",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Параллельно нагрузке рекомендуют керамический конденсатор не менее 0,1 мкФ; его напряжение не менее 1,5 выходного напряжения блока.",
+    "reference": "2, сноска под схемой"
+  },
+  {
+    "id": "q013",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Не более 0,25 кг.",
+    "reference": "1, таблица"
+  },
+  {
+    "id": "q014",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "10 лет.",
+    "reference": "1, таблица; продолжение диалога о БП30Б-Д3-х"
+  },
+  {
+    "id": "q015",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "2 года.",
+    "reference": "1, таблица; продолжение того же диалога"
+  },
+  {
+    "id": "q016",
+    "source": "bp30",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Нет. При монтаже питание отключают у блока и у всех подключённых к нему устройств.",
+    "reference": "1, монтаж и подключение"
+  },
+  {
+    "id": "q017",
+    "source": "bp30",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В документах нет текущих складских остатков.",
+    "reference": "Полный документ: индивидуальных складских данных нет"
+  },
+  {
+    "id": "q018",
+    "source": "bp30",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В документе нет серийного номера экземпляра пользователя.",
+    "reference": "Полный документ"
+  },
+  {
+    "id": "q019",
+    "source": "bp30",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить: входное или выходное напряжение и какая модификация блока интересует.",
+    "reference": "Недостаёт вида напряжения и модификации"
+  },
+  {
+    "id": "q020",
+    "source": "bp30",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить, какой ток и какая модификация интересуют: выходной, потребления или пусковой.",
+    "reference": "Несколько разных токов в таблице"
+  },
+  {
+    "id": "q021",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Питание включено.",
+    "reference": "1, состояние индикатора питания"
+  },
+  {
+    "id": "q022",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Соединение установлено, но активность отсутствует.",
+    "reference": "1, индикатор Link/Activity"
+  },
+  {
+    "id": "q023",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Идёт передача или приём данных.",
+    "reference": "1, индикатор Link/Activity"
+  },
+  {
+    "id": "q024",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Соединение отсутствует.",
+    "reference": "1, индикатор Link/Activity"
+  },
+  {
+    "id": "q025",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Кабель надёжно подключён с обоих концов; подключённое устройство включено и работает нормально; кабель не длиннее 100 м.",
+    "reference": "2, вопрос 2 в FAQ"
+  },
+  {
+    "id": "q026",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "100 м.",
+    "reference": "2, FAQ и характеристики кабеля"
+  },
+  {
+    "id": "q027",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "От 0 до 40 °C.",
+    "reference": "2, условия окружающей среды"
+  },
+  {
+    "id": "q028",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "От −40 до 70 °C.",
+    "reference": "2, условия окружающей среды"
+  },
+  {
+    "id": "q029",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "10–90%, без образования конденсата.",
+    "reference": "2, рабочая влажность"
+  },
+  {
+    "id": "q030",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "5–90%, без образования конденсата.",
+    "reference": "2, влажность хранения"
+  },
+  {
+    "id": "q031",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Store-and-Forward, хранение и передача.",
+    "reference": "2, основные характеристики"
+  },
+  {
+    "id": "q032",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "2000 Мбит/с.",
+    "reference": "2, скорость передачи данных; не скорость отдельного направления"
+  },
+  {
+    "id": "q033",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "10, 100 и 1000 Мбит/с.",
+    "reference": "2, интерфейсы"
+  },
+  {
+    "id": "q034",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "1 488 000 пакетов/кадров в секунду на порт.",
+    "reference": "2, фильтрация/передача пакетов"
+  },
+  {
+    "id": "q035",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "148 800 пакетов/кадров в секунду на порт.",
+    "reference": "2, та же строка для 100 Мбит/с"
+  },
+  {
+    "id": "q036",
+    "source": "tplink",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Нет, инструкция запрещает использование устройства во влажной среде, в частности в сыром подвале.",
+    "reference": "2, меры предосторожности"
+  },
+  {
+    "id": "q037",
+    "source": "tplink",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В руководстве нет сегодняшней цены магазина.",
+    "reference": "Полный документ"
+  },
+  {
+    "id": "q038",
+    "source": "tplink",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В руководстве нет MAC-адреса экземпляра пользователя.",
+    "reference": "Полный документ"
+  },
+  {
+    "id": "q039",
+    "source": "tplink",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить, у какого устройства и для какой задачи выбирается режим.",
+    "reference": "Новый чат, устройство и задача неизвестны"
+  },
+  {
+    "id": "q040",
+    "source": "tplink",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить, что именно нужно посчитать и о каком объекте речь.",
+    "reference": "Новый чат, нет объекта"
+  },
+  {
+    "id": "q041",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "С 14 лет, при предъявлении документа, удостоверяющего личность; это относится к гражданам РФ и иностранным гражданам.",
+    "reference": "3, пункт 2.1"
+  },
+  {
+    "id": "q042",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Можно записаться дистанционно через официальный сайт РГБ.",
+    "reference": "4, пункт 2.2.2"
+  },
+  {
+    "id": "q043",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, билет при очной записи оформляется бесплатно.",
+    "reference": "4, пункт 2.2.1"
+  },
+  {
+    "id": "q044",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Пластиковая карта с фотографией читателя.",
+    "reference": "4, пункт 2.2.1"
+  },
+  {
+    "id": "q045",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Читатель возмещает стоимость изготовления дубликата.",
+    "reference": "4, пункт 2.6"
+  },
+  {
+    "id": "q046",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "На основании соответствующего договора.",
+    "reference": "4, пункт 2.5"
+  },
+  {
+    "id": "q047",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет; несовершеннолетнему без документа нужно сопровождение лица не моложе 18 лет.",
+    "reference": "4, пункт 3.1.3"
+  },
+  {
+    "id": "q048",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, мобильные устройства используют без звуковых сигналов.",
+    "reference": "6, пункт 3.1.16"
+  },
+  {
+    "id": "q049",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "В свободных электрических розетках в читательской зоне библиотеки.",
+    "reference": "6, пункт 3.1.17"
+  },
+  {
+    "id": "q050",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Инструмент в футляре/чехле разрешён в отделе нотных изданий и звукозаписей; играть можно только в специально отведённых местах.",
+    "reference": "6, пункт 3.1.18"
+  },
+  {
+    "id": "q051",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, фотографирование таких документов не допускается.",
+    "reference": "6, пункт 3.1.20"
+  },
+  {
+    "id": "q052",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, фотографирование документов, изданных до 1830 года, не допускается.",
+    "reference": "6, пункт 3.1.20"
+  },
+  {
+    "id": "q053",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "На 5 лет.",
+    "reference": "4, пункт 2.3"
+  },
+  {
+    "id": "q054",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Можно получить дубликат с возмещением стоимости его изготовления.",
+    "reference": "4, пункт 2.6"
+  },
+  {
+    "id": "q055",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Да, допускается дистанционное пользование библиотекой.",
+    "reference": "4, пункт 3.1.1"
+  },
+  {
+    "id": "q056",
+    "source": "rsl",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Нет: фотографирование документов с корешком высотой более 4 см не допускается.",
+    "reference": "7, продолжение пункта 3.1.20"
+  },
+  {
+    "id": "q057",
+    "source": "rsl",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В правилах нет номера личного билета пользователя.",
+    "reference": "Полный документ"
+  },
+  {
+    "id": "q058",
+    "source": "rsl",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В данном документе нет точной стоимости изготовления дубликата.",
+    "reference": "4, пункт 2.6: указана обязанность возместить, не сумма"
+  },
+  {
+    "id": "q059",
+    "source": "rsl",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить, какое действие имеется в виду и в какой ситуации.",
+    "reference": "Новый чат, нет действия"
+  },
+  {
+    "id": "q060",
+    "source": "rsl",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить, какая услуга или товар интересует.",
+    "reference": "Новый чат, нет предмета"
+  },
+  {
+    "id": "q061",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "220–240 В переменного тока, 50–60 Гц.",
+    "reference": "63, технические данные"
+  },
+  {
+    "id": "q062",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "1850–2200 Вт.",
+    "reference": "63, технические данные"
+  },
+  {
+    "id": "q063",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, ни на открытом воздухе, ни в ванной использовать нельзя.",
+    "reference": "64, безопасность"
+  },
+  {
+    "id": "q064",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, руководство предусматривает бытовое, а не профессиональное использование.",
+    "reference": "64, назначение"
+  },
+  {
+    "id": "q065",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Не пользоваться; обратиться в авторизованный сервисный центр.",
+    "reference": "64, безопасность"
+  },
+  {
+    "id": "q066",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет.",
+    "reference": "64, безопасность"
+  },
+  {
+    "id": "q067",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, при наполнении чайник должен быть снят с подставки.",
+    "reference": "65 и 67"
+  },
+  {
+    "id": "q068",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "По инструкции при открытой крышке автоматического выключения не будет; во время кипячения крышка должна быть закрыта.",
+    "reference": "67, раздел 2.1"
+  },
+  {
+    "id": "q069",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Перевести выключатель вверх.",
+    "reference": "67, раздел 2.1"
+  },
+  {
+    "id": "q070",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Да, дать чайнику остыть перед каждым нагревом.",
+    "reference": "67, раздел 2.1"
+  },
+  {
+    "id": "q071",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Смягчённую или фильтрованную.",
+    "reference": "67, полезные советы"
+  },
+  {
+    "id": "q072",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "2 стакана белого уксуса или 1 столовую ложку лимонной кислоты; добавляют после кипячения воды и отключения чайника от сети.",
+    "reference": "68, раздел 3.2, шаги 1–3"
+  },
+  {
+    "id": "q073",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Бензином, растворителями, абразивными чистящими средствами, металлическими предметами и жёсткими щётками.",
+    "reference": "68, раздел 3.1"
+  },
+  {
+    "id": "q074",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Нет; прибор, подставку и шнур не погружают в воду или другие жидкости.",
+    "reference": "65 и 68, безопасность и очистка"
+  },
+  {
+    "id": "q075",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Отключённым от сети, остывшим и полностью сухим, в сухом прохладном месте, недоступном детям.",
+    "reference": "68, раздел 3.3"
+  },
+  {
+    "id": "q076",
+    "source": "beko",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Перевозить в оригинальной упаковке; не класть тяжёлые грузы на прибор или упаковку.",
+    "reference": "68, раздел 3.4"
+  },
+  {
+    "id": "q077",
+    "source": "beko",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В руководстве нет серийного номера экземпляра пользователя.",
+    "reference": "Полный документ"
+  },
+  {
+    "id": "q078",
+    "source": "beko",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В руководстве нет актуальной цены магазина.",
+    "reference": "Полный документ"
+  },
+  {
+    "id": "q079",
+    "source": "beko",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить, какое вещество, куда и для какой цели нужно добавить.",
+    "reference": "Новый чат, нет вещества и процедуры"
+  },
+  {
+    "id": "q080",
+    "source": "beko",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить, что именно и для какой цели пользователь хочет использовать.",
+    "reference": "Новый чат, нет объекта и цели"
+  },
+  {
+    "id": "q081",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Допустимы конверт, конверт с воздушной прослойкой, пластиковый пакет или плотная бумага с перевязкой/заклеиванием; категория — бумажная продукция и мелкие вещи до 2 кг.",
+    "reference": "Статья, общие требования, первый абзац"
+  },
+  {
+    "id": "q082",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "51 × 28 × 20 см. Это размеры коробки, а не самого вложения.",
+    "reference": "Статья, общие требования"
+  },
+  {
+    "id": "q083",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Не менее 10,5 × 14,8 см.",
+    "reference": "Статья, общие требования"
+  },
+  {
+    "id": "q084",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, вторично использовать коробки Почты России нельзя.",
+    "reference": "Статья, общие требования"
+  },
+  {
+    "id": "q085",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет, штрихкод нельзя закрывать скотчем, плёнкой или иным материалом.",
+    "reference": "Статья, общие требования"
+  },
+  {
+    "id": "q086",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Заполнить пустоты, чтобы содержимое не перемещалось; например, пенопластом, опилками, стружкой или ватой.",
+    "reference": "Статья, общие требования"
+  },
+  {
+    "id": "q087",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Нет. Для способных протекать жидкостей нужна твёрдая упаковка с защитным/амортизирующим материалом; пластиковый пакет недопустим.",
+    "reference": "Статья, разные виды вложений: жидкости"
+  },
+  {
+    "id": "q088",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Обязательно в герметичную ёмкость и затем в твёрдую упаковку.",
+    "reference": "Статья, порошки"
+  },
+  {
+    "id": "q089",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Корзину, обшитую тканью, либо ящик с вентиляционными отверстиями; дно закрыть полиэтиленовой плёнкой или клеёнкой.",
+    "reference": "Статья, саженцы"
+  },
+  {
+    "id": "q090",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Да, нужны вентиляционные отверстия; для твёрдых свежих фруктов допускаются также вертикальные просветы. Прокладка разрешена, но здесь не названа обязательной.",
+    "reference": "Статья, свежие фрукты и овощи"
+  },
+  {
+    "id": "q091",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Шины должны быть чистыми и упакованными в мешки.",
+    "reference": "Статья, автопокрышки"
+  },
+  {
+    "id": "q092",
+    "source": "post",
+    "action": "answer",
+    "dialogue": false,
+    "answer": "Для такого предмета допускается отправка без дополнительной упаковки.",
+    "reference": "Статья, исключение об отправке без дополнительной упаковки"
+  },
+  {
+    "id": "q093",
+    "source": "post",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Прочная светлая однотонная ткань: цельный кусок либо однородные куски, сшитые внутренним швом.",
+    "reference": "Статья, тканевая упаковка"
+  },
+  {
+    "id": "q094",
+    "source": "post",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Нет, адрес надо написать на ткани; пришивать адрес запрещено.",
+    "reference": "Статья, тканевая упаковка"
+  },
+  {
+    "id": "q095",
+    "source": "post",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Твёрдая упаковка и защитный/амортизирующий материал, исключающий перемещение и повреждение.",
+    "reference": "Статья, хрупкие предметы и точные приборы"
+  },
+  {
+    "id": "q096",
+    "source": "post",
+    "action": "answer",
+    "dialogue": true,
+    "answer": "Нет: сначала предъявить содержимое сотруднику для сверки с описью, затем упаковать.",
+    "reference": "Статья, общие требования, опись вложения"
+  },
+  {
+    "id": "q097",
+    "source": "post",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В этой статье нет тарифа для такого отправления.",
+    "reference": "Полная статья о содержимом и упаковке"
+  },
+  {
+    "id": "q098",
+    "source": "post",
+    "action": "insufficient",
+    "dialogue": false,
+    "answer": "В материалах нет данных отслеживания личной посылки; нужен трек-номер и соответствующий сервис, положение не выдумывать.",
+    "reference": "Полная статья"
+  },
+  {
+    "id": "q099",
+    "source": "post",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить, между какими вариантами и для какой задачи выбирает пользователь.",
+    "reference": "Новый чат, нет предмета выбора"
+  },
+  {
+    "id": "q100",
+    "source": "post",
+    "action": "clarify",
+    "dialogue": false,
+    "answer": "Уточнить вид отправления и направление; единого предела для всех отправлений в статье нет.",
+    "reference": "В статье различаются виды отправлений, параметры пользователя отсутствуют"
+  }
+]

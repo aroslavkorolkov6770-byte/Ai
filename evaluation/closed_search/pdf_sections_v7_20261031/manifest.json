@@ -1,0 +1,124 @@
+{
+  "at": "2026-10-31T09:58:16.224Z",
+  "root": "C:\\Users\\KROLL\\Desktop\\Ai",
+  "final_run": "results/verified",
+  "runtime_count": 78,
+  "changed_core": [
+    {
+      "path": "ai_core/site_documents.py",
+      "before": "cb5c32e28ca9e7eb8dbbfcd1baae5794cc845f55cda583c8a221ccc78178bf7c",
+      "after": "0fa4aab8b6594115c75c0f1135d6fe0ad3330344be0944bde6f5d3ddb6b74fbf"
+    },
+    {
+      "path": "ai_core/site_pdf_sections.py",
+      "before": null,
+      "after": "cedbb5d666c82b4e25fe88d78276b8b3d52f111da9f6639ea7713cf386e9f51b"
+    },
+    {
+      "path": "ai_core/site_search.py",
+      "before": "2d57c0fca3eb74e140af643593bc3e9ecca467fa03ea7f9b2618015fd2e39e55",
+      "after": "23e5e7931675986e32e23511483918dcf4f677e746d61caa1667dc093ea02163"
+    },
+    {
+      "path": "ai_core/site_search_followup.py",
+      "before": "7b1ea0eb672b612ba22d2f5f853f8b24c58a1e414795dfd7beaf5b9a8699cff5",
+      "after": "3976bf0f7ba2319fb1cbb4d66d86eb54bf6adf0020acd0c2d48b4135c9de0998"
+    },
+    {
+      "path": "ai_core/site_search_language.py",
+      "before": "8f1e851e3c8560305db4457e93096518324b6f396d5fd662af1b9f0d7ba81a2a",
+      "after": "8e9b77f11cad650e5e61cff5c58f491739eb2bfe4111d5e744a2781937c7e39e"
+    },
+    {
+      "path": "ai_core/site_search_runtime.py",
+      "before": "a8c8d67c6e167d2474615e1b8468c8203c5a49a27cf7176aa066363a545013a8",
+      "after": "8c5d1b350dd8e7f601b04ad38f509bf8cd09f710cee9aff5e86c87c661f3e1dc"
+    },
+    {
+      "path": "ai_core/site_search_structure.py",
+      "before": "56231cf313ec070a8d958f2b528cd814ecd9783d722f1071b184470e89f5ccd5",
+      "after": "1c99d27f28551f0f591bf1aed37b2dfc15349f6d330c59f0446c45fcd8c56640"
+    },
+    {
+      "path": "ai_core/site_search_technical.py",
+      "before": "9198863da2e827051641d6401228b161261465275ff5f3f6a29443791c0940be",
+      "after": "581a61f1c037f404a367a252551d01bfccae9bd044abe71a987587187594613d"
+    }
+  ],
+  "full_code_files": [
+    {
+      "path": "ai_core/site_documents.py",
+      "sha256": "0fa4aab8b6594115c75c0f1135d6fe0ad3330344be0944bde6f5d3ddb6b74fbf"
+    },
+    {
+      "path": "ai_core/site_pdf_sections.py",
+      "sha256": "cedbb5d666c82b4e25fe88d78276b8b3d52f111da9f6639ea7713cf386e9f51b"
+    },
+    {
+      "path": "ai_core/site_search.py",
+      "sha256": "23e5e7931675986e32e23511483918dcf4f677e746d61caa1667dc093ea02163"
+    },
+    {
+      "path": "ai_core/site_search_followup.py",
+      "sha256": "3976bf0f7ba2319fb1cbb4d66d86eb54bf6adf0020acd0c2d48b4135c9de0998"
+    },
+    {
+      "path": "ai_core/site_search_language.py",
+      "sha256": "8e9b77f11cad650e5e61cff5c58f491739eb2bfe4111d5e744a2781937c7e39e"
+    },
+    {
+      "path": "ai_core/site_search_runtime.py",
+      "sha256": "8c5d1b350dd8e7f601b04ad38f509bf8cd09f710cee9aff5e86c87c661f3e1dc"
+    },
+    {
+      "path": "ai_core/site_search_structure.py",
+      "sha256": "1c99d27f28551f0f591bf1aed37b2dfc15349f6d330c59f0446c45fcd8c56640"
+    },
+    {
+      "path": "ai_core/site_search_technical.py",
+      "sha256": "581a61f1c037f404a367a252551d01bfccae9bd044abe71a987587187594613d"
+    },
+    {
+      "path": "tests/test_site_pdf_sections.py",
+      "sha256": "28bb64e06bb5a91641c805db277b773fdb10e6bbf2279db98f87b7ad021019b9"
+    },
+    {
+      "path": "evaluation/closed_search/pdf_sections_v7_20261031/run.py",
+      "sha256": "a5bbe64d42567d9c4f9449a9a18afe5d2b1549cd8b3e0e3d852d4fd6afe82ca4"
+    },
+    {
+      "path": "evaluation/closed_search/pdf_sections_v7_20261031/postcheck.py",
+      "sha256": "5d38d01b51f3a739612dbe06471d5e387bb38d1f8be10868dc309742813766da"
+    },
+    {
+      "path": "evaluation/closed_search/pdf_sections_v7_20261031/grade.cjs",
+      "sha256": "909406c908e4eeecffa8a287e82d1c37d08036d5e2e8a9e23f4d387046b1b26c"
+    },
+    {
+      "path": "evaluation/closed_search/pdf_sections_v7_20261031/package_report.cjs",
+      "sha256": "971f357dbffa8dc4c9a7162955bb53366246c60c2d8207f2c1b9a2be6d79158d"
+    }
+  ],
+  "checks": [
+    {
+      "path": "results/tests-verified.txt",
+      "sha256": "5d209cc83184993f92ae25fefbacb8e82e9a9f45d933fbaed318c7d33bb330aa"
+    },
+    {
+      "path": "results/verified/answers.jsonl",
+      "sha256": "033c4cedba11a484a8eb09399ede0d256599dd1cc8977052f9851c17f6f3e015"
+    },
+    {
+      "path": "results/verified/judgments.json",
+      "sha256": "313f3f868fe0799d6081d0ec8c9dc99cdf4cf8ab447547296212580e22218b93"
+    },
+    {
+      "path": "results/verified/postcheck.json",
+      "sha256": "1bbe02bc83ac897eaacef292c8ad6b5c6f6670ceb0d26970557c52529f9530ac"
+    },
+    {
+      "path": "results/verified/summary.json",
+      "sha256": "6f781d7eb4017185b5a1e87ec3b46ec857794d23937dc361ef465fee192d0a67"
+    }
+  ]
+}

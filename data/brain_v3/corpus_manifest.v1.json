@@ -1,0 +1,88 @@
+{
+  "format_version": 1,
+  "corpus_name": "brain-v3-russian-corpus",
+  "language_scope": [
+    "ru"
+  ],
+  "accepted_licenses": [
+    "OWNED_BY_PROJECT",
+    "CC0-1.0",
+    "CC-BY-4.0",
+    "MIT",
+    "Apache-2.0"
+  ],
+  "quality_gate": {
+    "minimum_unique_dialogue_turns": 20000,
+    "minimum_language_characters": 100000000,
+    "maximum_rejected_record_ratio": 0.0,
+    "require_all_splits": true
+  },
+  "sources": [
+    {
+      "source_id": "tatoeba-rus-cc0-v1",
+      "raw_path": "raw/tatoeba-rus-cc0-v2.jsonl",
+      "raw_sha256": "7c1e2cbeee1b0f698a9e93194d0a808813cf463e5dcb32cd4e5ace843dce08d9",
+      "source_kind": "open_licensed",
+      "license": "CC0-1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "origin_url": "https://tatoeba.org/",
+      "attribution": "Tatoeba Project, Russian CC0 sentence export",
+      "approved_for_training": true
+    },
+    {
+      "source_id": "dream-ru-open-cc-by-v1",
+      "raw_path": "raw/dream-ru-open-cc-by-v1.jsonl",
+      "raw_sha256": "bec0786af854e0ae5bf564261ffea1a1fb79abdf3fed455cf9ebf7270b65f0e6",
+      "source_kind": "open_licensed",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "origin_url": "https://spraakbanken.gu.se/en/resources/dream-ru-open",
+      "attribution": "Språkbanken, DReaM-ru-open (2019), DOI 10.23695/gzsh-rp33",
+      "approved_for_training": true
+    },
+    {
+      "source_id": "russian-everyday-dialogues-cc-by-v1",
+      "raw_path": "raw/russian-everyday-dialogues-cc-by-v1.jsonl",
+      "raw_sha256": "21924f77a5de33f6023a659d6149d11db03d83336f6c0edf3a184aeffff89773",
+      "source_kind": "open_licensed",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "origin_url": "https://huggingface.co/datasets/kukunechka/russian-everyday-dialogues",
+      "attribution": "Ekaterina Myskina (2025), Russian Everyday Dialogues, Hugging Face",
+      "approved_for_training": true
+    },
+    {
+      "source_id": "mot-rus-golosameriki-cc-by-v1",
+      "raw_path": "raw/mot-rus-golosameriki-cc-by-v1.jsonl",
+      "raw_sha256": "fcaa3e1af5a64929afd58cb553ed7a4ff67abbd05ff76bc55c3652a14753cee2",
+      "source_kind": "open_licensed",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "origin_url": "https://github.com/bltlab/mot",
+      "attribution": "Palen-Michel, Kim, and Lignos (2022), Multilingual Open Text (MOT), Russian VOA release v1.11",
+      "approved_for_training": true
+    },
+    {
+      "source_id": "russian-multiwoz-mit-v1",
+      "raw_path": "raw/russian-multiwoz-mit-v1.jsonl",
+      "raw_sha256": "a46b58068552acac31a09cf3bb34127ef9e3a9803505db573b1997a619f67222",
+      "source_kind": "open_licensed",
+      "license": "MIT",
+      "license_url": "https://github.com/vonCount/Russian-MultiWOZ/blob/1bd77673533e568ba0746ee304f758296f8dc77f/LICENSE",
+      "origin_url": "https://github.com/vonCount/Russian-MultiWOZ/tree/1bd77673533e568ba0746ee304f758296f8dc77f",
+      "attribution": "Nikitin and Kopachinskaya (2021), Russian MultiWOZ, HSE; MIT repository snapshot",
+      "approved_for_training": true
+    },
+    {
+      "source_id": "openassistant-oasst1-apache-v1",
+      "raw_path": "raw/openassistant-oasst1-apache-v1.jsonl",
+      "raw_sha256": "c040157ca4db005e3e919e9d5c6b70d85817657b5ec49ea23f6724e3a8467d0c",
+      "source_kind": "open_licensed",
+      "license": "Apache-2.0",
+      "license_url": "https://huggingface.co/datasets/OpenAssistant/oasst1/blob/fdf72ae0827c1cda404aff25b6603abec9e3399b/LICENSE",
+      "origin_url": "https://huggingface.co/datasets/OpenAssistant/oasst1/tree/fdf72ae0827c1cda404aff25b6603abec9e3399b",
+      "attribution": "OpenAssistant Conversations Dataset (OASST1), Apache-2.0 fixed tree snapshot",
+      "approved_for_training": true
+    }
+  ]
+}

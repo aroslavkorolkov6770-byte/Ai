@@ -1,0 +1,46 @@
+{
+  "documents": [
+    {
+      "key": "base",
+      "file": "base.pdf",
+      "pages": 3,
+      "sha256": "b32b75c59e939bb5e23d43486054ed3350e1353719b176998e4f682c5e01d299"
+    },
+    {
+      "key": "moved",
+      "file": "moved.pdf",
+      "pages": 3,
+      "sha256": "991940d193c8bd17286bbdd32c4c1cdf8f7106eda42170a09869f6c058191021"
+    },
+    {
+      "key": "removed",
+      "file": "removed.pdf",
+      "pages": 3,
+      "sha256": "2781d96fb8e4f7d93c8fc02cc124abb120ace1b5cb228aadf788689288b82d21"
+    },
+    {
+      "key": "duplicate",
+      "file": "duplicate.pdf",
+      "pages": 3,
+      "sha256": "18009c7f146efd0aa2ac764e0435c5b56b192e9598c94dad4a6d9deb73a462c9"
+    },
+    {
+      "key": "scan",
+      "file": "scan.pdf",
+      "pages": 2,
+      "sha256": "68adf5c6aafc766ca495262edaa5215c54a12e7a51920edbc54c4e129ad27941"
+    }
+  ],
+  "question": "Кто принимает поставку Лиственит?",
+  "rule": "Поставку Лиственит принимает координатор.",
+  "scan_question": "Кто принимает поставку Бериллит?",
+  "scan_rule": "Поставку Бериллит принимает диспетчер.",
+  "expected": {
+    "base_page": 2,
+    "moved_page": 3,
+    "scan_page": 2,
+    "removed": "not_found",
+    "old_revision": "changed",
+    "duplicate_location": "ambiguous"
+  }
+}

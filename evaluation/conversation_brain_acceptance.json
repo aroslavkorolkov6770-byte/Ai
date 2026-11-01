@@ -1,0 +1,68 @@
+[
+  {
+    "id": "greeting",
+    "prompt": "Привет",
+    "expected_source": "conversation-direct",
+    "expected_intent": "greeting",
+    "must_contain": "Привет"
+  },
+  {
+    "id": "gratitude",
+    "prompt": "Спасибо, стало понятнее",
+    "expected_source": "conversation-direct",
+    "expected_intent": "gratitude",
+    "must_contain": "Пожалуйста"
+  },
+  {
+    "id": "correction",
+    "prompt": "Ты не понял, я имел в виду другое",
+    "expected_source": "conversation-direct",
+    "expected_intent": "correction",
+    "must_contain": "Понял"
+  },
+  {
+    "id": "support",
+    "prompt": "Мне одиноко и тревожно",
+    "expected_source": "conversation-direct",
+    "expected_intent": "support",
+    "must_contain": "Понимаю"
+  },
+  {
+    "id": "choice_help",
+    "prompt": "Мне нужно выбрать между двумя вариантами",
+    "expected_source": "conversation-direct",
+    "expected_intent": "choice",
+    "must_contain": "варианты"
+  },
+  {
+    "id": "contextual_conversation",
+    "prompt": "Давай просто поговорим",
+    "previous_messages": [
+      {
+        "role": "user",
+        "content": "Мне хочется обсудить важную мысль"
+      },
+      {
+        "role": "assistant",
+        "content": "Я слушаю"
+      }
+    ],
+    "expected_source": "conversation-brain",
+    "expected_intent": "dialogue",
+    "must_contain": "Давай продолжим"
+  },
+  {
+    "id": "fact_question_keeps_fact_route",
+    "prompt": "Что такое фотосинтез?",
+    "expected_source": "internet-search-auto",
+    "expected_intent": "internet_answer",
+    "must_contain": "Проверенный краткий факт"
+  },
+  {
+    "id": "knowledge_request_without_question_mark",
+    "prompt": "Расскажи о космосе",
+    "expected_source": "internet-search-auto",
+    "expected_intent": "internet_answer",
+    "must_contain": "Проверенный краткий факт"
+  }
+]

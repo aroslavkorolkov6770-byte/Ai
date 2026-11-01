@@ -1,0 +1,188 @@
+{
+  "documents": [
+    {
+      "id": "lab_layout_borderless",
+      "name": "Таблица_без_рамок.pdf"
+    },
+    {
+      "id": "lab_layout_missing",
+      "name": "Пустая_ячейка_без_рамок.pdf"
+    },
+    {
+      "id": "lab_layout_photo",
+      "name": "Фото_с_перспективой.pdf"
+    },
+    {
+      "id": "lab_layout_continued",
+      "name": "Перенос_строки_Флюорит.pdf"
+    },
+    {
+      "id": "lab_layout_wrong_continued",
+      "name": "Неверный_перенос_Флюорит.pdf"
+    },
+    {
+      "id": "lab_layout_notes",
+      "name": "Сноска_на_следующей_странице.pdf"
+    },
+    {
+      "id": "lab_layout_wrong_notes",
+      "name": "Чужая_сноска_на_следующей_странице.pdf"
+    }
+  ],
+  "cases": [
+    {
+      "id": "borderless-first",
+      "source": "lab_layout_borderless",
+      "q": "Сколько хранится товар Амазонит?",
+      "has": [
+        "6 календарных"
+      ],
+      "absent": [
+        "14 календарных",
+        "Кианит"
+      ]
+    },
+    {
+      "id": "borderless-next",
+      "source": "lab_layout_borderless",
+      "q": "Сколько хранится товар Кианит?",
+      "has": [
+        "14 календарных"
+      ],
+      "absent": [
+        "6 календарных",
+        "Амазонит"
+      ]
+    },
+    {
+      "id": "borderless-recipient",
+      "source": "lab_layout_borderless",
+      "q": "Кто отвечает за товар Амазонит?",
+      "has": [
+        "Координатор"
+      ],
+      "absent": [
+        "Старший сотрудник"
+      ]
+    },
+    {
+      "id": "photo-first",
+      "source": "lab_layout_photo",
+      "q": "Сколько хранится товар Альбит?",
+      "has": [
+        "9 календарных"
+      ],
+      "absent": [
+        "4 календарных",
+        "Гелиодор"
+      ]
+    },
+    {
+      "id": "photo-next",
+      "source": "lab_layout_photo",
+      "q": "Сколько хранится товар Гелиодор?",
+      "has": [
+        "4 календарных"
+      ],
+      "absent": [
+        "9 календарных"
+      ]
+    },
+    {
+      "id": "continued",
+      "source": "lab_layout_continued",
+      "q": "Что сделать при повреждении упаковки поставки Флюорит?",
+      "has": [
+        "сделайте фото",
+        "уведомите старшего смены"
+      ],
+      "absent": [
+        "уведомите."
+      ]
+    },
+    {
+      "id": "note",
+      "source": "lab_layout_notes",
+      "q": "Упаковка вскрыта. Сколько хранится товар Данбурит?",
+      "has": [
+        "2 календарных"
+      ],
+      "absent": [
+        "8 календарных"
+      ]
+    },
+    {
+      "id": "note-base",
+      "source": "lab_layout_notes",
+      "q": "Упаковка не вскрыта. Сколько хранится товар Данбурит?",
+      "has": [
+        "8 календарных"
+      ],
+      "absent": [
+        "2 календарных"
+      ]
+    },
+    {
+      "id": "missing",
+      "source": "lab_layout_missing",
+      "q": "Сколько хранится товар Амазонит?",
+      "status": "unavailable",
+      "absent": [
+        "14 календарных",
+        "6 календарных"
+      ]
+    },
+    {
+      "id": "wrong-continuation",
+      "source": "lab_layout_wrong_continued",
+      "q": "Что сделать при повреждении упаковки поставки Флюорит?",
+      "status": "unavailable",
+      "absent": [
+        "уведомите старшего смены"
+      ]
+    },
+    {
+      "id": "wrong-note",
+      "source": "lab_layout_wrong_notes",
+      "q": "Упаковка вскрыта. Сколько хранится товар Данбурит?",
+      "status": "unavailable",
+      "absent": [
+        "8 календарных",
+        "2 календарных"
+      ]
+    }
+  ],
+  "holdout": [
+    {
+      "id": "borderless-paraphrase",
+      "source": "lab_layout_borderless",
+      "q": "Как долго можно держать товар Кианит?",
+      "has": [
+        "14 календарных"
+      ],
+      "absent": [
+        "6 календарных"
+      ]
+    },
+    {
+      "id": "photo-paraphrase",
+      "source": "lab_layout_photo",
+      "q": "Какой срок хранения у Альбита?",
+      "has": [
+        "9 календарных"
+      ],
+      "absent": [
+        "4 календарных"
+      ]
+    },
+    {
+      "id": "continued-paraphrase",
+      "source": "lab_layout_continued",
+      "q": "У поставки Флюорит повреждена упаковка. Что делать?",
+      "has": [
+        "сделайте фото",
+        "уведомите старшего смены"
+      ]
+    }
+  ]
+}

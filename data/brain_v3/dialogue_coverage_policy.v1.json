@@ -1,0 +1,76 @@
+{
+  "format_version": 1,
+  "policy_id": "brain_v3_dialogue_coverage_v1",
+  "scope": {
+    "language": "ru",
+    "record_type": "dialogue",
+    "layer": "dialogue"
+  },
+  "minimums": {
+    "minimum_unique_dialogue_turns": 20000,
+    "minimum_dialogue_records": 6000,
+    "minimum_multi_turn_records": 2500,
+    "minimum_multi_turn_ratio": 0.35,
+    "minimum_turns_by_split": {
+      "train": 16000,
+      "validation": 2000,
+      "test": 2000
+    }
+  },
+  "required_topics": {
+    "casual_dialogue": 1600,
+    "emotional_support": 1200,
+    "opinion_and_choice": 1400,
+    "explanation_and_instruction": 2000,
+    "context_and_memory": 1200,
+    "correction": 1000,
+    "uncertainty_and_clarification": 1000,
+    "tool_routing": 1200,
+    "web_grounding": 1000,
+    "privacy_and_memory": 700,
+    "style_and_length": 900,
+    "safety_boundaries": 900
+  },
+  "required_dialogue_goals": {
+    "casual_connection": 1500,
+    "emotional_support": 1300,
+    "reflect_and_decide": 1500,
+    "explain_or_plan": 1800,
+    "clarify_missing_context": 1200,
+    "follow_up_with_context": 1400,
+    "acknowledge_and_correct": 1200,
+    "handle_uncertainty": 1200,
+    "route_verified_fact": 1500,
+    "respect_privacy": 800,
+    "adapt_style": 1000,
+    "safe_boundary": 900
+  },
+  "required_emotional_tones": {
+    "neutral": 2400,
+    "warm": 2000,
+    "supportive": 1800,
+    "calm": 1800,
+    "thoughtful": 1600,
+    "concise": 900,
+    "firm": 900
+  },
+  "required_response_properties": {
+    "relevant": 5000,
+    "natural_tone": 4000,
+    "brief": 2200,
+    "context_retained": 1600,
+    "no_repeat": 1600,
+    "ask_when_missing": 1400,
+    "fact_grounded": 1800,
+    "no_url_without_request": 2000,
+    "no_unfounded_memory": 1400,
+    "privacy_respected": 900,
+    "acknowledges_correction": 1300,
+    "appropriate_empathy": 1500,
+    "clear_next_step": 1800,
+    "no_fake_certainty": 1600,
+    "safe_boundary": 1000,
+    "source_on_request": 700,
+    "uses_requested_style": 1300
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "brain-v3-corpus-record-v1",
+  "title": "Brain v3 corpus record",
+  "description": "Reference schema for a future Russian Brain v3 corpus. The local auditor additionally enforces exact field sets, provenance matching, hashes, safe text policy and split deduplication.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/dialogueRecord"
+    },
+    {
+      "$ref": "#/$defs/languageDocumentRecord"
+    }
+  ],
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "license",
+        "license_url",
+        "origin_url",
+        "attribution"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]{2,95}$"
+        },
+        "license": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "license_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "origin_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri"
+        },
+        "attribution": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 1000
+        }
+      }
+    },
+    "turn": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "text"
+      ],
+      "properties": {
+        "role": {
+          "enum": [
+            "user",
+            "assistant"
+          ]
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 20000
+        }
+      }
+    },
+    "shared": {
+      "type": "object",
+      "required": [
+        "format_version",
+        "id",
+        "record_type",
+        "provenance",
+        "language",
+        "layer",
+        "split",
+        "topic",
+        "quality_tier",
+        "expected_response_properties",
+        "content_sha256"
+      ],
+      "properties": {
+        "format_version": {
+          "const": 1
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9._-]{2,95}$"
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "language": {
+          "const": "ru"
+        },
+        "layer": {
+          "enum": [
+            "language",
+            "dialogue",
+            "reasoning",
+            "tool"
+          ]
+        },
+        "split": {
+          "enum": [
+            "train",
+            "validation",
+            "test"
+          ]
+        },
+        "topic": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 96
+        },
+        "quality_tier": {
+          "enum": [
+            "license_verified",
+            "human_reviewed"
+          ]
+        },
+        "expected_response_properties": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "content_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      }
+    },
+    "dialogueRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/shared"
+        },
+        {
+          "type": "object",
+          "required": [
+            "dialogue_goal",
+            "emotional_tone",
+            "turns"
+          ],
+          "properties": {
+            "record_type": {
+              "const": "dialogue"
+            },
+            "dialogue_goal": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 96
+            },
+            "emotional_tone": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 64
+            },
+            "turns": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 32,
+              "items": {
+                "$ref": "#/$defs/turn"
+              }
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "languageDocumentRecord": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/shared"
+        },
+        {
+          "type": "object",
+          "required": [
+            "document_kind",
+            "text"
+          ],
+          "properties": {
+            "record_type": {
+              "const": "language_document"
+            },
+            "document_kind": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 96
+            },
+            "text": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 80000
+            }
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+  }
+}

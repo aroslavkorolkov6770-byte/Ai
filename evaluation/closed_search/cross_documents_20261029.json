@@ -1,0 +1,49 @@
+{
+  "description": "Вымышленные правила, зафиксированные до изменения алгоритма. Разные официальные документы не отменяют друг друга без явной проверенной связи.",
+  "documents": [
+    {"id":"lab_cross_receiver","name":"Приёмка_Содалит.md","text":"Поставку Содалит принимает координатор склада."},
+    {"id":"lab_cross_processing","name":"Обработка_Содалит.md","text":"Если упаковка не вскрыта, поставка Содалит обрабатывается 6 рабочих дней. Если упаковка вскрыта, поставка Содалит обрабатывается 2 рабочих дня."},
+    {"id":"lab_cross_base","name":"Хранение_Халцедон.md","text":"Товар Халцедон хранится 8 календарных дней."},
+    {"id":"lab_cross_short","name":"Ограничение_Халцедон.md","text":"# Хранение товара Халцедон\nИсключение: если упаковка вскрыта, срок хранения составляет 2 календарных дня."},
+    {"id":"lab_cross_public","name":"Хранение_Танзанит.md","text":"Товар Танзанит хранится 7 календарных дней."},
+    {"id":"lab_cross_restricted","name":"Ограничение_Танзанит.md","allowedUserIds":["closed_lab_b"],"text":"Если упаковка вскрыта, товар Танзанит хранится 3 календарных дня."},
+    {"id":"lab_cross_warehouse","name":"Склад_Азурит.md","text":"Если товар находится на складе, товар Азурит хранится 10 календарных дней."},
+    {"id":"lab_cross_shop","name":"Зал_Азурит.md","text":"Если товар находится в зале, товар Азурит хранится 4 календарных дня."},
+    {"id":"lab_cross_current","name":"Действующий_Кахолонг.md","text":"Товар Кахолонг хранится 9 календарных дней."},
+    {"id":"lab_cross_archived","name":"Старый_Кахолонг.md","status":"archived","text":"Товар Кахолонг хранится 15 календарных дней."},
+    {"id":"lab_cross_delivery","name":"Доставка_Кахолонг.md","text":"Товар Кахолонг доставляется 5 рабочих дней."},
+    {"id":"lab_cross_other","name":"Приёмка_Танзанит.md","text":"Товар Танзанит принимает диспетчер."}
+  ],
+  "cases": [
+    {"id":"compound-facts","q":"Упаковка вскрыта. Кто принимает поставку Содалит и сколько дней она обрабатывается?","has":["координатор склада","2 рабочих"],"absent":["6 рабочих"],"sources":["lab_cross_receiver","lab_cross_processing"],"chat":"compound-facts"},
+    {"id":"compound-correction","q":"А если упаковка не вскрыта?","has":["6 рабочих"],"absent":["2 рабочих"],"sources":["lab_cross_processing"],"chat":"compound-facts"},
+    {"id":"compound-missing","q":"Кто принимает поставку Содалит и сколько дней она обрабатывается?","status":"partial","has":["координатор склада","Уточните","упаковка"],"sources":["lab_cross_receiver"],"chat":"missing"},
+    {"id":"compound-clarified","q":"Упаковка вскрыта.","has":["2 рабочих"],"absent":["6 рабочих"],"sources":["lab_cross_processing"],"chat":"missing"},
+    {"id":"other-user","user":"b","q":"А если упаковка не вскрыта?","status":"clarify","chat":"missing"},
+    {"id":"other-chat","q":"А сколько дней?","status":"clarify","chat":"new"},
+    {"id":"short-active","q":"Упаковка вскрыта. Сколько хранится товар Халцедон?","status":"conflict","absent":["8 календарных","2 календарных"]},
+    {"id":"short-false","q":"Упаковка не вскрыта. Сколько хранится товар Халцедон?","has":["8 календарных"],"absent":["2 календарных"],"sources":["lab_cross_base"]},
+    {"id":"short-unknown","q":"Сколько хранится товар Халцедон?","status":"clarify","has":["упаковка"],"chat":"short"},
+    {"id":"short-clarified-false","q":"Упаковка не вскрыта.","has":["8 календарных"],"sources":["lab_cross_base"],"chat":"short"},
+    {"id":"private-hidden","q":"Упаковка вскрыта. Сколько хранится товар Танзанит?","has":["7 календарных"],"absent":["3 календарных"],"sources":["lab_cross_public"]},
+    {"id":"private-visible-conflict","user":"b","q":"Упаковка вскрыта. Сколько хранится товар Танзанит?","status":"conflict"},
+    {"id":"private-false","user":"b","q":"Упаковка не вскрыта. Сколько хранится товар Танзанит?","has":["7 календарных"],"sources":["lab_cross_public"]},
+    {"id":"warehouse","q":"Товар находится на складе. Сколько хранится товар Азурит?","has":["10 календарных"],"absent":["4 календарных"],"sources":["lab_cross_warehouse"]},
+    {"id":"shop","q":"Товар находится в зале. Сколько хранится товар Азурит?","has":["4 календарных"],"absent":["10 календарных"],"sources":["lab_cross_shop"]},
+    {"id":"place-unknown","q":"Сколько хранится товар Азурит?","status":"clarify","has":["товар"]},
+    {"id":"different-operations","q":"Сколько хранится товар Кахолонг и сколько дней он доставляется?","has":["9 календарных","5 рабочих"],"absent":["15 календарных"],"sources":["lab_cross_current","lab_cross_delivery"],"chat":"operations"},
+    {"id":"different-operation-followup","q":"А сколько дней?","status":"clarify","chat":"operations"},
+    {"id":"topic-switch","q":"Кто принимает товар Танзанит?","has":["диспетчер"],"sources":["lab_cross_other"],"chat":"compound-facts"},
+    {"id":"no-previous-topic","q":"А если упаковка вскрыта?","absent":["Содалит","2 рабочих","6 рабочих"],"allowed_statuses":["clarify","not_found"],"chat":"compound-facts"},
+    {"id":"compound-conflict","q":"Упаковка вскрыта. Кто принимает поставку Содалит и сколько хранится товар Халцедон?","status":"conflict","absent":["координатор","8 календарных","2 календарных"],"chat":"conflicted"},
+    {"id":"conflict-does-not-seed","q":"А сколько дней?","status":"clarify","chat":"conflicted"}
+  ],
+  "holdout": [
+    {"id":"lowercase-short","q":"Упаковка вскрыта. Как долго можно держать товар халцедон?","status":"conflict"},
+    {"id":"reverse-order","q":"Упаковка не вскрыта. Сколько дней обрабатывается поставка Содалит и кто её принимает?","has":["6 рабочих","координатор склада"],"sources":["lab_cross_processing","lab_cross_receiver"]},
+    {"id":"false-short-paraphrase","q":"Упаковка не открыта. Какой срок хранения у товара Халцедон?","has":["8 календарных"],"sources":["lab_cross_base"]},
+    {"id":"known-false-next-operation","q":"Товар находится на складе. Сколько хранится товар Азурит и сколько дней доставляется товар Кахолонг?","has":["10 календарных","5 рабочих"],"sources":["lab_cross_warehouse","lab_cross_delivery"]},
+    {"id":"private-compound","q":"Упаковка вскрыта. Кто принимает товар Танзанит и сколько дней он хранится?","has":["диспетчер","7 календарных"],"absent":["3 календарных"],"sources":["lab_cross_other","lab_cross_public"]},
+    {"id":"no-fact-invention","q":"Не знаю, вскрыта ли упаковка. Сколько хранится товар Халцедон?","status":"clarify","absent":["8 календарных","2 календарных"]}
+  ]
+}

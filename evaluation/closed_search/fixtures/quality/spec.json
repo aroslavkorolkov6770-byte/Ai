@@ -1,0 +1,235 @@
+{
+  "documents": [
+    {
+      "id": "lab_quality_clean",
+      "name": "Чёткие_сроки.pdf",
+      "sha256": "416833302d302cfe254891df20e8732d34a375d0de048b393c0bf2b9d2bbf813",
+      "degradation": "clean",
+      "negative": false
+    },
+    {
+      "id": "lab_quality_soft",
+      "name": "Лёгкое_размытие.pdf",
+      "sha256": "75bcef6c55d91e857dde2769bb80bb05365ad55cddea7f0e38462ae0b74fd89b",
+      "degradation": "soft",
+      "negative": false
+    },
+    {
+      "id": "lab_quality_shadow",
+      "name": "Тень_на_таблице.pdf",
+      "sha256": "752cf2482884da67a518740344cd5c1d2395a03833062a2adb70bfdb5889904a",
+      "degradation": "shadow",
+      "negative": false
+    },
+    {
+      "id": "lab_quality_jpeg",
+      "name": "Сжатая_таблица.pdf",
+      "sha256": "aa6c6545404980028014aeabeeb64aa189bf532da537f3293f0c33adabe6f595",
+      "degradation": "jpeg",
+      "negative": false
+    },
+    {
+      "id": "lab_quality_blur",
+      "name": "Сильное_размытие.pdf",
+      "sha256": "cabf9eb942fb1e3aa92248488c9d3dfa93021eb09780f19c735303f5c9b2dc76",
+      "degradation": "blur",
+      "negative": true
+    },
+    {
+      "id": "lab_quality_crop",
+      "name": "Обрезанный_столбец.pdf",
+      "sha256": "4bf8179427f9985075b58ca05186ff0ccb000dee5fad76899abca61389b4868a",
+      "degradation": "crop",
+      "negative": true
+    },
+    {
+      "id": "lab_quality_number",
+      "name": "Нечёткие_цифры.pdf",
+      "sha256": "5b100f4f560a6fbe8e950f1ea0c0f42d0f211d73f69cdfc493a648110687d498",
+      "degradation": "number",
+      "negative": true
+    },
+    {
+      "id": "lab_quality_negation",
+      "name": "Чёткий_запрет.pdf",
+      "sha256": "3b62e945eb57020f57f46baef96d238bd1bd9503676f0b6cc14e90c61362a637",
+      "degradation": "negation",
+      "negative": false
+    },
+    {
+      "id": "lab_quality_negation_shadow",
+      "name": "Тень_на_запрете.pdf",
+      "sha256": "c852a752c8e8fa5a0cec11f00eb0e4328c969b4c13717122f59ee12329af47a5",
+      "degradation": "negation_shadow",
+      "negative": false
+    },
+    {
+      "id": "lab_quality_negation_crop",
+      "name": "Обрезанное_отрицание.pdf",
+      "sha256": "092305810a2ee4fede9bd628e91ca073c44ec8b42722a6712de3492d3299f011",
+      "degradation": "negation_crop",
+      "negative": true
+    },
+    {
+      "id": "lab_quality_negation_spot",
+      "name": "Повреждённое_отрицание.pdf",
+      "sha256": "226dd8cc69d78e336bc35640924feaa5be93544acea1f03f79a322b220b9a27d",
+      "degradation": "negation_spot",
+      "negative": true
+    }
+  ],
+  "cases": [
+    {
+      "id": "clean",
+      "source": "lab_quality_clean",
+      "q": "Сколько хранится товар Селенит?",
+      "status": "answer",
+      "has": [
+        "13 календарных"
+      ],
+      "absent": [
+        "18 календарных"
+      ]
+    },
+    {
+      "id": "soft",
+      "source": "lab_quality_soft",
+      "q": "Сколько хранится товар Селенит?",
+      "status": "answer",
+      "has": [
+        "13 календарных"
+      ],
+      "absent": [
+        "18 календарных"
+      ]
+    },
+    {
+      "id": "shadow",
+      "source": "lab_quality_shadow",
+      "q": "Сколько хранится товар Лабрадорит?",
+      "status": "answer",
+      "has": [
+        "18 календарных"
+      ],
+      "absent": [
+        "13 календарных"
+      ]
+    },
+    {
+      "id": "jpeg",
+      "source": "lab_quality_jpeg",
+      "q": "Сколько хранится товар Селенит?",
+      "status": "answer",
+      "has": [
+        "13 календарных"
+      ],
+      "absent": [
+        "18 календарных"
+      ]
+    },
+    {
+      "id": "blur",
+      "source": "lab_quality_blur",
+      "q": "Сколько хранится товар Селенит?",
+      "status": "unavailable",
+      "has": [],
+      "absent": [
+        "13 календарных",
+        "18 календарных"
+      ]
+    },
+    {
+      "id": "crop",
+      "source": "lab_quality_crop",
+      "q": "Сколько хранится товар Селенит?",
+      "status": "unavailable",
+      "has": [],
+      "absent": [
+        "13 календарных",
+        "18 календарных"
+      ]
+    },
+    {
+      "id": "number",
+      "source": "lab_quality_number",
+      "q": "Сколько хранится товар Селенит?",
+      "status": "exact_or_refuse",
+      "has": [
+        "13 календарных"
+      ],
+      "absent": [
+        "18 календарных"
+      ],
+      "numbers": [
+        "13"
+      ]
+    },
+    {
+      "id": "negation",
+      "source": "lab_quality_negation",
+      "q": "Можно ли хранить товар Иолит рядом с водой?",
+      "status": "answer",
+      "has": [
+        "Не храните"
+      ],
+      "absent": []
+    },
+    {
+      "id": "negation_shadow",
+      "source": "lab_quality_negation_shadow",
+      "q": "Можно ли хранить товар Иолит рядом с водой?",
+      "status": "answer",
+      "has": [
+        "Не храните"
+      ],
+      "absent": []
+    },
+    {
+      "id": "negation_crop",
+      "source": "lab_quality_negation_crop",
+      "q": "Можно ли хранить товар Иолит рядом с водой?",
+      "status": "unavailable",
+      "has": [],
+      "absent": []
+    },
+    {
+      "id": "negation_spot",
+      "source": "lab_quality_negation_spot",
+      "q": "Можно ли хранить товар Иолит рядом с водой?",
+      "status": "exact_or_refuse",
+      "has": [
+        "Не храните"
+      ],
+      "absent": []
+    }
+  ],
+  "holdout": [
+    {
+      "id": "shadow-paraphrase",
+      "source": "lab_quality_shadow",
+      "q": "Как долго хранить Лабрадорит?",
+      "status": "answer",
+      "has": [
+        "18 календарных"
+      ],
+      "absent": [
+        "13 календарных"
+      ]
+    },
+    {
+      "id": "crop-paraphrase",
+      "source": "lab_quality_crop",
+      "q": "Какой срок хранения у Селенита?",
+      "status": "unavailable"
+    },
+    {
+      "id": "negation-paraphrase",
+      "source": "lab_quality_negation_shadow",
+      "q": "Товар Иолит можно держать около воды?",
+      "status": "answer",
+      "has": [
+        "Не храните"
+      ]
+    }
+  ]
+}

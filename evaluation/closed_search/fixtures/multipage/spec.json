@@ -1,0 +1,217 @@
+{
+  "documents": [
+    {
+      "id": "lab_multi_chain",
+      "name": "Три_страницы_Родонит.pdf",
+      "pages": 3,
+      "negative": false,
+      "sha256": "c0cd53803aa1de8051865ed5ccc61e77bbf7ac54d2e5594409de8f47809031d1"
+    },
+    {
+      "id": "lab_multi_revision",
+      "name": "Новая_редакция_Родонит.pdf",
+      "pages": 3,
+      "negative": true,
+      "sha256": "ad9664790429f2a645102f7b9e6476bffa4f159190336d1f095a7d702784358b"
+    },
+    {
+      "id": "lab_multi_wrong",
+      "name": "Чужое_продолжение.pdf",
+      "pages": 3,
+      "negative": true,
+      "sha256": "cbd31ccb5fe5750886ac103a6b57897c27db149820c15089a04c3b39eb1cf480"
+    },
+    {
+      "id": "lab_multi_missing",
+      "name": "Без_последней_страницы.pdf",
+      "pages": 2,
+      "negative": true,
+      "sha256": "914433e61e841309a5feec8e651f9eb9435f3b747684ddb249fe48dae8906ccb"
+    },
+    {
+      "id": "lab_multi_rows",
+      "name": "Четыре_страницы_сроков.pdf",
+      "pages": 4,
+      "negative": false,
+      "sha256": "e0e03d7c1584186c738b4836685863c946de1245a42a93e5ec33751b87976c52"
+    },
+    {
+      "id": "lab_multi_notes",
+      "name": "Две_сноски_на_трёх_страницах.pdf",
+      "pages": 3,
+      "negative": false,
+      "sha256": "bf5cc74596ec73dec0a7f70e0ffc197e40929febec08f04f541b9815e6801a94"
+    },
+    {
+      "id": "lab_multi_wrong_notes",
+      "name": "Неверная_область_сноски.pdf",
+      "pages": 3,
+      "negative": true,
+      "sha256": "5d3a4b343276e63aa535527f4e6e39fad335f898b62a970bb33f6217093fed76"
+    }
+  ],
+  "cases": [
+    {
+      "id": "chain",
+      "source": "lab_multi_chain",
+      "q": "Что сделать при повреждении упаковки поставки Родонит?",
+      "has": [
+        "сделайте фото",
+        "уведомите координатора",
+        "запишите номер поставки в бумажный журнал"
+      ],
+      "absent": [],
+      "status": "answer"
+    },
+    {
+      "id": "revision",
+      "source": "lab_multi_revision",
+      "q": "Что сделать при повреждении упаковки поставки Родонит?",
+      "has": [
+        "электронный журнал"
+      ],
+      "absent": [
+        "бумажный журнал"
+      ],
+      "status": "answer"
+    },
+    {
+      "id": "wrong",
+      "source": "lab_multi_wrong",
+      "q": "Что сделать при повреждении упаковки поставки Родонит?",
+      "has": [],
+      "absent": [
+        "сделайте фото"
+      ],
+      "status": "unavailable"
+    },
+    {
+      "id": "missing",
+      "source": "lab_multi_missing",
+      "q": "Что сделать при повреждении упаковки поставки Родонит?",
+      "has": [],
+      "absent": [
+        "уведомите координатора"
+      ],
+      "status": "unavailable"
+    },
+    {
+      "id": "first",
+      "source": "lab_multi_rows",
+      "q": "Сколько хранится поставка Гелиотроп?",
+      "has": [
+        "11 календарных"
+      ],
+      "absent": [],
+      "status": "answer"
+    },
+    {
+      "id": "second",
+      "source": "lab_multi_rows",
+      "q": "Сколько хранится поставка Пренит?",
+      "has": [
+        "16 календарных"
+      ],
+      "absent": [],
+      "status": "answer"
+    },
+    {
+      "id": "third",
+      "source": "lab_multi_rows",
+      "q": "Сколько хранится поставка Пироп?",
+      "has": [
+        "21 календарных"
+      ],
+      "absent": [],
+      "status": "answer"
+    },
+    {
+      "id": "fourth",
+      "source": "lab_multi_rows",
+      "q": "Сколько хранится поставка Рутил?",
+      "has": [
+        "26 календарных"
+      ],
+      "absent": [],
+      "status": "answer"
+    },
+    {
+      "id": "note-base",
+      "source": "lab_multi_notes",
+      "q": "Упаковка не вскрыта, этикетка не повреждена. Сколько хранится поставка Авантюрин?",
+      "has": [
+        "12 календарных"
+      ],
+      "absent": [
+        "3 календарных",
+        "2 календарных"
+      ],
+      "status": "answer"
+    },
+    {
+      "id": "note-first",
+      "source": "lab_multi_notes",
+      "q": "Упаковка вскрыта, этикетка не повреждена. Сколько хранится поставка Авантюрин?",
+      "has": [
+        "3 календарных"
+      ],
+      "absent": [
+        "12 календарных",
+        "2 календарных"
+      ],
+      "status": "answer"
+    },
+    {
+      "id": "note-second",
+      "source": "lab_multi_notes",
+      "q": "Упаковка не вскрыта, этикетка повреждена. Сколько хранится поставка Авантюрин?",
+      "has": [
+        "2 календарных"
+      ],
+      "absent": [
+        "12 календарных",
+        "3 календарных"
+      ],
+      "status": "answer"
+    },
+    {
+      "id": "note-missing",
+      "source": "lab_multi_wrong_notes",
+      "q": "Упаковка не вскрыта, этикетка не повреждена. Сколько хранится поставка Авантюрин?",
+      "has": [],
+      "absent": [],
+      "status": "unavailable"
+    }
+  ],
+  "holdout": [
+    {
+      "id": "chain-paraphrase",
+      "source": "lab_multi_chain",
+      "q": "У поставки Родонит повреждена упаковка. Что делать?",
+      "has": [
+        "уведомите координатора",
+        "бумажный журнал"
+      ],
+      "absent": [],
+      "status": "answer"
+    },
+    {
+      "id": "last-paraphrase",
+      "source": "lab_multi_rows",
+      "q": "Как долго можно держать поставку Рутил?",
+      "has": [
+        "26 календарных"
+      ],
+      "absent": [],
+      "status": "answer"
+    },
+    {
+      "id": "both-exceptions",
+      "source": "lab_multi_notes",
+      "q": "Упаковка вскрыта, этикетка повреждена. Сколько хранится поставка Авантюрин?",
+      "has": [],
+      "absent": [],
+      "status": "conflict"
+    }
+  ]
+}
